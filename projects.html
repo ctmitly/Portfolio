@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects | Siti Nur-Fatimah</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <h2 class="logo">SNF.</h2>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Projects Section -->
+        <main>
+            <section class="page-header">
+                <h1>My Projects</h1>
+                <p>
+                    Here are some of the projects and practical work
+                    that I have completed during my studies.
+                </p>
+            </section>
+
+            <section class="projects-section">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.png"
+                            alt="Project 1 image">
+                    </div>
+
+                    <div class="project-content">
+                        <h2>Project 1: Project Real-Time Data Sensor Data Collection</h2>
+
+                        <h3>Problem Statement</h3>
+                        <p>
+                            The main problem addressed by this project is the need to upgrade an existing monitoring system from displaying simulated data to tracking real-time environmental conditions. Previously, the dashboard only showed test data rather than actual measurements from a physical sensor. To solve this, the project connects a physical sensor and an ESP32 microcontroller to automatically collect live temperature and humidity readings and display them directly on the online dashboard.
+                        </p>
+
+                        <h3>My Role</h3>
+                        <p>
+                            In this project, I was responsible for building and connecting the entire system from the physical hardware to the mobile app. I wired the DHT11 sensor to the ESP32 microcontroller and programmed the board in Arduino IDE to read live temperature and humidity values and send them over Wi-Fi. Next, I connected the ESP32 to Google Sheets using Google Apps Script so incoming measurements were automatically logged and formatted. Finally, I linked the spreadsheet to Google Looker Studio to display real-time charts and scorecards, and configured the Android Studio application using WebView so users can easily view the live dashboard on a mobile phone.
+                        </p>
+
+                        <h3>Tools Used</h3>
+                        <ul>
+                            <li>ESP32 Microcontroller</li>
+                            <li>DHT11 Sensor</li>
+                            <li>USB Cable</li>
+                            <li>Wire Jumpers</li>
+                            <li>Arduino</li>
+                            <li>Google Sheets</li>
+                            <li>Google Looker Studio</li>
+                            <li>Google Apps Script</li>
+                            <li>Android Studio</li>
+                            <li>GitHub</li>
+                        </ul>
+
+                        <h3>Project Outcome</h3>
+                        <p>
+                            By completing this project, we successfully connected an ESP32 microcontroller and a DHT11 sensor to Google Sheets using Google Apps Script to automatically collect, store, and display live temperature and humidity readings. We upgraded our Looker Studio dashboard and Android mobile application to show actual sensor measurements—such as temperatures between 25.60°C and 26.40°C and humidity levels between 65% and 67%—instead of simulated test data. Through troubleshooting upload errors, sensor reading failures, HTTP connection codes, and spreadsheet formatting issues, we gained practical skills in setting up hardware connections, managing wireless data transmission, and formatting cloud data so it displays accurately on remote dashboards.
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.png"
+                            alt="Project 2 image">
+                    </div>
+
+                    <div class="project-content">
+                        <h2>Project 2: Project Masjid Water Pump Monitoring</h2>
+
+                        <h3>Problem Statement</h3>
+                        <p>
+                            The main problem addressed by this project is the lack of real-time visibility into the water levels of the Masjid UMPSA water tank. Relying on manual checks makes it difficult to monitor water usage accurately and increases the risk of unexpected water shortages or tank overflows during peak prayer times. To solve this, the project develops an IoT monitoring dashboard that collects live data directly from sensors inside the masjid's water tank and displays real-time water levels, allowing facility managers to track water availability easily and take timely action.
+                        </p>
+
+                        <h3>My Role</h3>
+                        <p>
+                            In this project, my primary responsibility was designing and coding the monitoring dashboard for the Masjid UMPSA water tank. I created a clean, user-friendly layout to display real-time water levels and usage trends clearly so facility managers can check the tank's status at a glance. On the technical side, I wrote the code to connect the dashboard to the live sensor data feed, ensuring that the charts and status indicators update automatically whenever new readings arrive from the water tank.
+                        </p>
+
+                        <h3>Tools Used</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>Dockers</li>
+                            <li>PhpMyAdmin</li>
+                            <li>Xampp</li>
+                            <li>Node-Red</li>
+                            <li>Visual Studio Code</li>
+                            <li>GitHub</li>
+                        </ul>
+
+                        <h3>Project Outcome</h3>
+                        <p>
+                            By completing this project, we successfully developed an online monitoring dashboard that tracks and displays real-time water levels from the sensor inside the Masjid UMPSA water tank. This system replaces manual water checks with live, automated updates, enabling facility managers to monitor water usage easily, prevent unexpected water shortages or overflows, and ensure a reliable water supply for the masjid community.
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.png"
+                            alt="Project 3 image">
+                    </div>
+
+                    <div class="project-content">
+                        <h2>Project 3: Project Server Room Monitoring System</h2>
+
+                        <h3>Problem Statement</h3>
+                        <p>
+                            Server rooms house critical IT equipment that can suffer severe hardware damage, data loss, and costly service interruptions if exposed to excessive heat, high humidity, or unauthorized human access. Traditional multi-board monitoring systems are often expensive, overly complex, prone to communication lag, and risk losing recorded logs whenever the internet connection drops. To solve these issues, this project develops a cost-effective, single-node IoT monitoring system using just one ESP32 microcontroller to continuously track temperature, humidity, and room occupancy. It provides instant on-site alerts via an LCD screen and RGB LED, temporarily saves data in local memory during Wi-Fi outages, and uploads logs to Google Sheets and Looker Studio for remote monitoring and analysis.
+                        </p>
+
+                        <h3>My Role</h3>
+                        <p>
+                            In this project, my main job was to send the sensor data from the ESP32 to the cloud and create an online dashboard. I programmed the ESP32 to connect to Wi-Fi and send temperature, humidity, people count, and status updates to Google Sheets using Google Apps Script. Inside Google Sheets, I used a simple VLOOKUP formula to turn short error codes into easy-to-read messages. Finally, I connected the spreadsheet to Google Looker Studio to build a 3-page dashboard with clear graphs and tables, allowing users to check the server room conditions remotely from any device.
+                        </p>
+
+                        <h3>Tools Used</h3>
+                        <ul>
+                            <li>ESP32 Microcontroller</li>
+                            <li>DHT11 Sensor</li>
+                            <li>Ultrasonic Sensor</li>
+                            <li>LCD Display</li>
+                            <li>Breadboard</li>
+                            <li>Wire Jumpers</li>
+                            <li>Arduino</li>
+                            <li>Google Sheets</li>
+                            <li>Google Looker Studio</li>
+                            <li>Google Apps Script</li>
+                        </ul>
+
+                        <h3>Project Outcome</h3>
+                        <p>
+                            By completing this project, we successfully built and tested a working IoT Server Room Monitoring System that met all of its objectives. Throughout testing, the DHT11 and ultrasonic sensors consistently and accurately tracked temperature, humidity, and human occupancy, while the ESP32 setup ensured stable data processing and reliable communication. On-site users were able to immediately check room conditions and spot normal, alarm, or error states through the local I2C LCD screen and color-coded WS2812B RGB LED indicators. Additionally, connecting the system to cloud storage and a Looker Studio dashboard made it easy to monitor live conditions and analyze historical trends remotely. Overall, we demonstrated that this system is a practical, cost-effective, and scalable solution for improving server room management and protecting critical IT equipment.
+                        </p>
+
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; <span id="year"></span>
+                Siti Nur-Fatimah. All Rights Reserved.
+            </p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
